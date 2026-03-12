@@ -49,33 +49,6 @@ export default function StatementPage() {
       .catch(err => console.error("Fetch error:", err))
   }, [])
 
-  const toggleReconcile = (index: number) => {
-    setReconciled(prev => {
-      const updated = [...prev]
-      updated[index] = !updated[index]
-      return updated
-    })
-    // ถ้าติ๊ก Reconciled → ยกเลิกติ๊ก Unreconciled
-    setUnreconciled(prev => {
-      const updated = [...prev]
-      if (updated[index]) updated[index] = false
-      return updated
-    })
-  }
-
-  const toggleUnreconcile = (index: number) => {
-    setUnreconciled(prev => {
-      const updated = [...prev]
-      updated[index] = !updated[index]
-      return updated
-    })
-    // ถ้าติ๊ก Unreconciled → ยกเลิกติ๊ก Reconciled
-    setReconciled(prev => {
-      const updated = [...prev]
-      if (updated[index]) updated[index] = false
-      return updated
-    })
-  }
 
   return (
     <div className="max-w-6xl mx-auto p-6 rounded-2xl border border-gray-300 shadow-xl
@@ -257,7 +230,7 @@ Attachment list
 
 <div className="mt-auto pt-6">
   <button
-    onClick={() => router.push('/')}
+    onClick={() => router.push('/codepage')}
     className="bg-[#FFF0A2] px-4 py-2 rounded"
   >
     Back

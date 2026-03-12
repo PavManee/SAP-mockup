@@ -1,12 +1,12 @@
 'use client'
 
 import { Suspense } from 'react'
-import HomeContent from './HomeContent'
+import CodePageContent from './CodePageContent'
 
 export default function Page() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <HomeContent />
+      <CodePageContent />
     </Suspense>
   )
 }

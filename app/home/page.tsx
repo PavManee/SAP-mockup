@@ -21,10 +21,25 @@ export default function TcodePage() {
       <div className="absolute top-0 left-0 w-full h-2 bg-[#8FB1D7] rounded-t-2xl"></div>
 
       <div className="relative">
-      <div className="flex items-center mb-4">
-      <Image src="/logo.png" alt="SAP Mockup" width={80} height={80} />
-      <span className="ml-2 text-xl font-semibold text-[#000000]">SAP mockup</span>
-      </div>
+<div className="flex items-center justify-between mb-4">
+
+  {/* ซ้าย */}
+  <div className="flex items-center">
+    <Image src="/logo.png" alt="SAP Mockup" width={80} height={80} />
+    <span className="ml-2 text-xl font-semibold text-[#000000]">
+      SAP mockup
+    </span>
+  </div>
+
+  {/* ขวา */}
+  <button
+    onClick={() => router.push("/")}
+    className="bg-[#FFF0A2] border px-3 py-1 rounded hover:bg-[#FFE37A]"
+  >
+    Logout
+  </button>
+
+</div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex items-center space-x-4">
             {/* ปุ่ม submit อยู่ซ้าย */}

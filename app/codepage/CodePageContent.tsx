@@ -85,6 +85,16 @@ export default function Home() {
 >
   <FaCheck size={20} className="text-white" />
 </button>
+{/* ปุ่มกลับ */}
+
+<div className="mt-auto pt-6">
+  <button
+    onClick={() => router.push('/home')}
+    className="bg-[#FFF0A2] px-4 py-2 rounded"
+  >
+    Back
+  </button>
+</div>
 
         </form>
       </div>
