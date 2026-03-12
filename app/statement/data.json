@@ -1,0 +1,8 @@
+[
+  { "date": "2025-09-01", "desc": "Service Fee", "amount": 100 },
+  { "date": "2025-09-15", "desc": "Consulting", "amount": 250 },
+  { "date": "2025-09-20", "desc": "License", "amount": 500 },
+  { "date": "2025-09-01", "desc": "Service Fee", "amount": 100 },
+  { "date": "2025-09-15", "desc": "Consulting", "amount": 250 },
+  { "date": "2025-09-20", "desc": "License", "amount": 500 }
+]

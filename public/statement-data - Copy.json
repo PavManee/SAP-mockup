@@ -1,0 +1,11 @@
+[
+  { "date": "2024-09-02", "desc": "Investment Return", "amount": "+2,723.06 THB" },
+  { "date": "2024-09-05", "desc": "Insurance Premium", "amount": "-3,604.57 THB" },
+  { "date": "2024-09-07", "desc": "Freelance Payment", "amount": "+7,804.87 THB" },
+  { "date": "2024-09-07", "desc": "ATM Withdrawal", "amount": "-1,809.56 THB" },
+  { "date": "2024-09-09", "desc": "Freelance Payment", "amount": "+8,021.07 THB" },
+  { "date": "2024-09-10", "desc": "Salary Deposit", "amount": "+44,919.40 THB" },
+  { "date": "2024-09-13", "desc": "Investment Return", "amount": "+2,663.43 THB" },
+  { "date": "2024-09-13", "desc": "Water Bill", "amount": "-876.84 THB" },
+  { "date": "2024-09-15", "desc": "Electricity Bill", "amount": "-1,742.10 THB" }
+]
