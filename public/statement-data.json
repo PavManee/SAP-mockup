@@ -1,1 +1,4 @@
-[{"date":"01.01.2024","desc":"Mobile Top-up","amount":"-฿653.75"},{"date":"06.01.2024","desc":"Gas Station","amount":"-฿1,275.61"},{"date":"08.01.2024","desc":"Water Bill","amount":"-฿740.98"},{"date":"13.01.2024","desc":"Freelance Payment","amount":"+฿8,031.19"},{"date":"14.01.2024","desc":"Insurance Premium","amount":"-฿3,613.83"},{"date":"21.01.2024","desc":"Salary Deposit","amount":"+฿44,780.14"},{"date":"22.01.2024","desc":"Water Bill","amount":"-฿698.96"},{"date":"23.01.2024","desc":"Internet Bill","amount":"-฿1,398.34"},{"date":"25.01.2024","desc":"Grocery Shopping","amount":"-฿3,735.22"},{"date":"28.01.2024","desc":"Salary Deposit","amount":"+฿45,119.46"},{"date":"28.01.2024","desc":"Electricity Bill","amount":"-฿1,387.92"}]
+[
+{"CoCd":"1100","Item":"1","PK":"40","Account":"5402000","Assignment":"","Description":"Training","Text":"","Amount":"550,000","CostCenster":"11220"},
+{"CoCd":"","Item":"2","PK":"31","Account":"3000122","Assignment":"TEST BUDGET","Description":"คอมพิวเตอร์เวิลด์ แอนด์","Text":"-","Amount":"550,000","CostCenster":""}
+]
