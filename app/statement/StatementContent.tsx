@@ -223,13 +223,13 @@ Attachment list
                 <tr className="bg-[#D2D5DE]">
                   <th className="border p-2 text-left">CoCd</th>
                   <th className="border p-2 text-left">Item</th>
-                  <th className="border p-2 text-right">PK</th>
+                  <th className="border p-2 text-left">PK</th>
                   <th className="border p-2 text-left">Account</th>
                   <th className="border p-2 text-left">Assignment</th>
-                  <th className="border p-2 text-right">Description</th>
+                  <th className="border p-2 text-left">Description</th>
                   <th className="border p-2 text-left">Text</th>
-                  <th className="border p-2 text-left">Amount</th>
-                  <th className="border p-2 text-right">CostCenster</th>
+                  <th className="border p-2 text-righ">Amount</th>
+                  <th className="border p-2 text-left">CostCenster</th>
                 </tr>
               </thead>
               <tbody>

@@ -1,55 +1,84 @@
 'use client'
-import Image from 'next/image'
-import { useState } from 'react'
-import { useRouter } from 'next/navigation'
-import { FaCheck } from 'react-icons/fa'
 
-export default function TcodePage() {
+import Image from "next/image"
+import { useRouter } from "next/navigation"
+import { useState } from "react"
+
+export default function LoginPage() {
+
   const router = useRouter()
-  const [tcode, setTcode] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+
+  const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
-    if (tcode.trim()) {
-      router.push(`/home?Tcode=${tcode}`)
+
+    if (username && password) {
+      router.push("/home") // ไปหน้า home
     }
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6 rounded-2xl border border-gray-300 bg-[#f0f4f8] shadow-xl relative overflow-hidden">
-      {/* ขอบบนสีเข้ม */}
-      <div className="absolute top-0 left-0 w-full h-2 bg-[#8FB1D7] rounded-t-2xl"></div>
 
-      <div className="relative">
-      <div className="flex items-center mb-4">
-      <Image src="/logo.png" alt="SAP Mockup" width={80} height={80} />
-      <span className="ml-2 text-xl font-semibold text-[#000000]">SAP mockup</span>
-      </div>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="flex items-center space-x-4">
-            {/* ปุ่ม submit อยู่ซ้าย */}
-        <button
-  type="submit"
-  className="flex items-center justify-center w-8 h-8 bg-[#76AB37] rounded-full hover:bg-[#76AB37]"
+<div className="min-h-screen flex items-center justify-center bg-[#e5edf5]">
+
+<div className="max-w-md w-full p-6 rounded-2xl border border-gray-300 bg-[#f0f4f8] shadow-xl relative overflow-hidden">
+
+{/* top bar */}
+<div className="absolute top-0 left-0 w-full h-2 bg-[#8FB1D7] rounded-t-2xl"></div>
+
+<div className="relative">
+
+{/* logo */}
+<div className="flex items-center mb-6">
+<Image src="/logo.png" alt="SAP" width={80} height={80} />
+<span className="ml-2 text-xl font-semibold">
+SAP mockup - Login
+</span>
+</div>
+
+<form onSubmit={handleLogin} className="space-y-4">
+
+{/* username */}
+<div>
+<label className="block mb-1">User name</label>
+<input
+type="text"
+value={username}
+onChange={(e) => setUsername(e.target.value)}
+className="w-full border rounded p-2 bg-[#FFF7C2]"
+/>
+</div>
+
+{/* password */}
+<div>
+<label className="block mb-1">Password</label>
+<input
+type="password"
+value={password}
+onChange={(e) => setPassword(e.target.value)}
+className="w-full border rounded p-2 bg-[#FFF7C2]"
+/>
+</div>
+
+{/* button */}
+<div className="flex justify-end">
+
+<button
+type="submit"
+className="bg-[#76AB37] text-white px-4 py-2 rounded"
 >
-  <FaCheck size={20} className="text-white" />
+Log in
 </button>
 
-            {/* ช่องกรอก Tcode */}
-            <input
-              type="text"
-              value={tcode}
-              onChange={(e) => setTcode(e.target.value)}
-              placeholder="Enter Tcode"
-              className="flex-1 p-2 border rounded"
-            />
-          </div>
-          <div className="flex items-center mb-4">
-          <img src="/mockProg1.png" alt="SAP Mockup" className="w-full h-auto m-0" />
-          </div>
-        </form>
-      </div>
-    </div>
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
 
   )
 }
