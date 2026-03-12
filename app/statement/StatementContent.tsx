@@ -23,7 +23,7 @@ export default function StatementPage() {
   const companyCode = params.get('cc') || ''
   const fiscalYear = params.get('year') || ''
 
-  type Row = { date: string; desc: string; amount: string }
+  type Row = Record<string, any>
   const [data, setData] = useState<Row[]>([])
   const [reconciled, setReconciled] = useState<boolean[]>([])
   const [unreconciled, setUnreconciled] = useState<boolean[]>([])
